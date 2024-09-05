@@ -124,6 +124,7 @@ header a:hover {
     transition: transform .4s;
 }
 .character-content h3 {
+    color: #0f0e0e;
     font-family: "SpiderMan";
     font-weight: 700;
     font-size: 2vw;
@@ -140,4 +141,14 @@ footer {
     left: 0;
     width: 100%;
     box-shadow: 0 -2px 5px rgba(0,0,0,0.3);
+}
+
+
+.modal-spider{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.modal-spider img{
+    width: 40%;
 }
