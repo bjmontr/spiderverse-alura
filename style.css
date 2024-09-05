@@ -1,0 +1,143 @@
+@font-face {
+    font-family: 'SpiderMan';
+    src: url('/src/fonts/Spider-Man.otf');
+}
+@font-face {
+    font-family: 'MarvelRegular';
+    src: url('/src/fonts/Tungsten-Bold.ttf');
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+html {
+    min-height: 100%;
+}
+body {
+    background: radial-gradient(circle, #a82f35, #791417);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow-x: hidden;
+}
+main {
+    margin: 0 32px 60px 32px; /* Ajuste para o rodapé */
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0f0e0e;
+    width: 100%;
+}
+header img {
+    width: 7%;
+    padding: 8px 2px;
+}
+header a {
+    margin-right: 16px;
+    font-family: "SpiderMan";
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+header a:hover {
+    color: #AD171C;
+    transition: .6s;
+}
+.text {
+    text-align: center;
+}
+.text h1 {
+    font-family: "SpiderMan";
+    font-size: 7vw;
+    margin: none;
+    letter-spacing: 2px;
+    text-shadow: 0px 19px 32px rgba(0, 0, 0, 0.75);
+}
+.text h2 {
+    font-family: "MarvelRegular";
+    font-size: 3vw;
+    text-shadow: 0px 19px 32px rgba(0, 0, 0, 0.75);
+}
+.content-input {
+    text-align: center;
+    margin-top: 32px;
+}
+.content-input input[type="text"] {
+    border: #000000 1.5px solid;
+    padding: 5px;
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 1.5vw;
+    border-radius: 50px;
+    background-color: #AD171C;
+    width: 100%; /* Ajustado para preencher o contêiner pai */
+    max-width: 500px; /* Limite de largura opcional */
+    height: 40px;
+}
+.content-input input::placeholder {
+    color: #ffffff30;
+}
+.btn-group {
+    margin-top: 8px;
+}
+.btn {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 1vw;
+    padding: 16px 32px;
+    color: #ffffff;
+    background-color: transparent;
+    border: none;
+    background-image: url(/src/img/btn.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    transition: .5s;
+}
+.btn i {
+    margin-right: 8px;
+}
+.btn:hover {
+    background-image: url(/src/img/btn-hover.svg);
+}
+.character-content {
+    transition: transform .4s;
+    cursor: pointer;
+}
+.character-content:hover {
+    transform: scale(1.5);
+}
+.cover-spider {
+    margin-top: 32px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    row-gap: 70px;
+}
+.cover-spider img {
+    width: 100%;
+    transition: transform .4s;
+}
+.character-content h3 {
+    font-family: "SpiderMan";
+    font-weight: 700;
+    font-size: 2vw;
+    letter-spacing: 1px;
+    text-align: center;
+}
+footer {
+    background-color: #AD171C;
+    text-align: center;
+    font-family: "MarvelRegular";
+    font-size: 2vw;
+    padding: 8px 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.3);
+}
