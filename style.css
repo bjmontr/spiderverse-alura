@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'SpiderMan';
-    src: url('/src/fonts/Spider-Man.otf');
+    src: url('./src/fonts/Spider-Man.otf');
 }
 @font-face {
     font-family: 'MarvelRegular';
-    src: url('/src/fonts/Tungsten-Bold.ttf');
+    src: url('./src/fonts/Tungsten-Bold.ttf');
 }
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
@@ -24,7 +24,7 @@ body {
     overflow-x: hidden;
 }
 main {
-    margin: 0 32px 60px 32px; /* Ajuste para o rodapé */
+    margin: 0 32px 60px 32px;
 }
 header {
     display: flex;
@@ -75,8 +75,8 @@ header a:hover {
     font-size: 1vw;
     border-radius: 50px;
     background-color: #AD171C;
-    width: 100%; /* Ajustado para preencher o contêiner pai */
-    max-width: 500px; /* Limite de largura opcional */
+    width: 100%;
+    max-width: 500px;
     height: 40px;
 }
 .content-input input::placeholder {
@@ -149,17 +149,20 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed; /* Use fixed para que o modal fique fixo na viewport */
+    position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Centraliza o modal */
+    transform: translate(-50%, -50%);
     background: radial-gradient(ellipse at center, #a82f35 0%, #AD171C 100%);
-    width: 90%; /* Ajuste conforme necessário */;
-    height: 90%;
-    z-index: 1000; /* Garante que o modal fique acima de outros elementos */
-  }
+    width: 90%;
+    height: 100%;
+    z-index: 1000;
+}
 .modal-spider img{
     width: 60%;
+}
+.bio-content h3{
+    font-family: "Roboto";
 }
 .bio-content h2{
     font-family: "SpiderMan";
@@ -167,7 +170,7 @@ footer {
     letter-spacing: 3px;
 }
 .description{
-    margin: 32px 24px 32px 0;
+    margin: 0px 24px 0px 0;
     padding: 32px 0;
     border-top: white 1px solid;
     border-bottom: white 1px solid;
@@ -192,5 +195,5 @@ footer {
     top: 10px;
     right: 10px;
     font-size: 24px;
-    color: white; /* Ajuste conforme necessário */
-  }
+    color: white;
+}
