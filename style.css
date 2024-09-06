@@ -93,7 +93,7 @@ header a:hover {
     color: #ffffff;
     background-color: transparent;
     border: none;
-    background-image: url(/src/img/btn.svg);
+    background-image: url(./src/img/btn.svg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -104,7 +104,7 @@ header a:hover {
     margin-right: 8px;
 }
 .btn:hover {
-    background-image: url(/src/img/btn-hover.svg);
+    background-image: url(./src/img/btn-hover.svg);
 }
 .character-content {
     transition: transform .4s;
