@@ -68,7 +68,10 @@ header a:hover {
     margin-top: 32px;
 }
 .content-input input[type="text"] {
-    border: #000000 1.5px solid;
+    border: none;
+    text-decoration: none;
+    border-style: none;
+    box-shadow: 0 0.8rem 0.8rem rgba(0, 0, 0, 0.1), 0 0.4rem 0.4rem rgba(0, 0, 0, 0.1), 0 0.2rem 0.2rem rgba(0, 0, 0, 0.1), 0 0 0 0.1rem rgba(0, 0, 0, 0.1), inset 0 0 0 0.1rem rgba(255, 255, 255, 0.03), inset 0 0.1rem 0 rgba(255, 255, 255, 0.03);
     padding: 10px 30px;
     font-family: "Roboto";
     font-weight: 500;
@@ -78,6 +81,10 @@ header a:hover {
     width: 100%;
     max-width: 500px;
     height: 40px;
+}
+.content-input input[type="text"]:focus{
+    border: 0 none;
+    outline: 0;
 }
 .content-input input::placeholder {
     color: #ffffff30;
@@ -93,19 +100,49 @@ header a:hover {
     color: #ffffff;
     background-color: transparent;
     border: none;
-    background-image: url(./src/img/btn.svg);
+    background-color: #0F0E0E;
+    -webkit-mask-image: url(./src/img/btn.svg);
+    mask-image: url(./src/img/btn.svg);
+    mask-size: cover;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
-    transition: .5s;
+    position: relative;
+    overflow: hidden;
+    transition: background-color .6s ease-in-out;
 }
+
 .btn i {
     margin-right: 8px;
 }
+
 .btn:hover {
-    background-image: url(./src/img/btn-hover.svg);
+    color: #fff;
+    box-shadow: 0 0.8rem 0.8rem rgba(0, 0, 0, 0.1), 0 0.4rem 0.4rem rgba(0, 0, 0, 0.1), 0 0.2rem 0.2rem rgba(0, 0, 0, 0.1), 0 0 0 0.1rem rgba(0, 0, 0, 0.1), inset 0 0 0 0.1rem rgba(255, 255, 255, 0.03), inset 0 0.1rem 0 rgba(255, 255, 255, 0.03);
 }
+
+.btn::after {
+    content: '';
+    position: absolute;
+    background-color: #CC0F14;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    right: 100%;
+    transition: all .6s ease-in-out;
+    box-shadow: 0 0.8rem 0.8rem rgba(0, 0, 0, 0.1), 0 0.4rem 0.4rem rgba(0, 0, 0, 0.1), 0 0.2rem 0.2rem rgba(0, 0, 0, 0.1), 0 0 0 0.1rem rgba(0, 0, 0, 0.1), inset 0 0 0 0.1rem rgba(255, 255, 255, 0.03), inset 0 0.1rem 0 rgba(255, 255, 255, 0.03);
+}
+
+.btn:hover::after {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: all .6s ease-in-out;
+}
+
 .character-content {
     transition: transform .4s;
     cursor: pointer;
