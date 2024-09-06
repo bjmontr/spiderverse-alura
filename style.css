@@ -69,10 +69,10 @@ header a:hover {
 }
 .content-input input[type="text"] {
     border: #000000 1.5px solid;
-    padding: 5px;
+    padding: 10px 30px;
     font-family: "Roboto";
     font-weight: 500;
-    font-size: 1.5vw;
+    font-size: 1vw;
     border-radius: 50px;
     background-color: #AD171C;
     width: 100%; /* Ajustado para preencher o contêiner pai */
